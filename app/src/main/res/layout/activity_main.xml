@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/message_recycle"
+    android:layout_weight="1"
+    android:background="#C0C0C0"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        android:background="#000000"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_message_input"
+            android:id="@+id/message_input"
+            android:textSize="28dp"
+            android:textColor="#C0C0C0"
+            android:background="#808080"
+            android:textColorHint="#F5EDED"
+            android:layout_weight="1"/>
+       <Button
+           android:padding="8dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/send_message_b"
+           android:text="@string/text_button"
+           android:layout_weight="1"
+           android:textSize="52dp"
+           android:textColor="#C0C0C0"
+           android:background="#696969" />
+    </LinearLayout>
+</LinearLayout>
